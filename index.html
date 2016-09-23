@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jukebox Starter Kit Workshop</title>
+	<script type="text/javascript" src="jukebox.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Jukebox Starter Kit</h1>
+<div id="anime"><h2 id="name"></h2></div>
+<audio id="box" src="music/Matti_Paalanen_Emotion.mp3" preload="auto" controls></audio><br />
+<div>
+  <button id="start" onclick="document.getElementById('box').play()">Play</button>
+  <button onclick="document.getElementById('box').pause()">Pause</button>
+  <button id="back">Back</button>
+  <button id="erven">Forward</button>
+  <button id="shuffle">Shuffle</button>
+
+  <button onclick="document.getElementById('box').volume+=0.1">Volume UP</button>
+  <button onclick="document.getElementById('box').volume-=0.1">Volume Down</button>
+</div>
+</body>
+</html>
